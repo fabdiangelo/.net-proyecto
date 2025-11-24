@@ -30,7 +30,7 @@ export default function Home() {
           <h1 className="title">
             {isLoggedIn ? (
               <>
-                Bienvenido
+                Bienvenidos
                 {displayName ? (
                   <>
                     , {displayName}
