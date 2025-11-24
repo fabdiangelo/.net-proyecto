@@ -33,10 +33,10 @@ public class RabbitMqCanjeWorker : BackgroundService
 {
     var factory = new ConnectionFactory
     {
-        HostName = _config["RabbitMQ:Host"],
-        Port = int.Parse(_config["RabbitMQ:Port"]),
-        UserName = _config["RabbitMQ:Username"],
-        Password = _config["RabbitMQ:Password"]
+        HostName = "rabbitmq",
+        Port = 5672,
+        UserName = "admin",
+        Password = "admin"
     };
 
     const string queueName = "beneficios.canjear";

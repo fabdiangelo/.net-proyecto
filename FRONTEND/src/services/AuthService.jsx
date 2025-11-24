@@ -14,7 +14,7 @@ const AuthContext = createContext(null);
 
 // Base de la API (cambiable por env)
 export const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "http://localhost:8080";
+  import.meta.env.VITE_API_BASE_URL || "";
 
 // Origin real (por si el env trae /api)
 export const API_ORIGIN = (() => {
